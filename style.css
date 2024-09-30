@@ -1,0 +1,186 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #FFFCFF;
+  user-select: none;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#header {
+  
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: 36px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+#header button {
+  background-color:rgb(202, 236, 202);
+  border: 1px solid rgb(0, 0, 0);
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: black;
+}
+#weekdays div {
+  width: 120px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid black;
+  margin-bottom: 30PX;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+.lo{
+  background-color:lightgray;
+}
+.event {
+  font-size: 15px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 25px;
+}
+.padding {
+  background-color: #FFFCFF;
+  box-shadow: none ;
+}
+.padding:hover{
+  background-color: transparent;
+}
+#newEventModal{
+  display: none;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput, #eventtime{
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid rgb(213, 79, 79);
+  box-shadow: #d36c6c;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+  margin-left: 10px;
+}
+#saveButton, #closeButton {
+  margin-left: 10px;
+  background-color: #92a1d1;
+}
+.morebut{
+  font-size: 10px;
+  max-height: 100px;
+  background-color: transparent;
+  border: none;
+  
+}
+#more ,#openevent ,.goto{
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+  min-height: 350px ;
+} 
+.clbut{
+  background-color: rgb(222, 103, 103);
+  border-radius: 5px;
+  border: 1px solid red;
+  color: white;
+  font-size: small;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+.delbut{
+  margin-top:none;
+  color: white;
+  background-color: rgb(216, 77, 77);
+  margin-bottom: 5px;
+}
+#backButton,#nextButton,#reset,#enterDate{
+  max-height: 30px;
+  padding: 0;
+  font-size: 20px;
+}
+.gotobu ,.gotobut{
+  color: white;
+  background-color: rgb(48, 207, 199);
+  border: 2px solid rgb(12, 118, 114);
+  margin: 30px;
+  border-radius: 7px;
+  position: absolute;
+  bottom:0;
+  font-size: 20px;
+  max-height: 35px;
+  cursor:pointer;
+}
+.gotobut{
+  left: 0;
+}
+.gotobu{
+  right: 0;
+}
+.goto_day{
+  background-color:lightcoral;
+}
+.more .event{
+  max-height: max-content;
+}
+.goto{
+  min-height: 0px;
+}

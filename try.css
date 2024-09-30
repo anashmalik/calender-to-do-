@@ -1,0 +1,12 @@
+
+    .header {
+        background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+        color: white;
+        text-align: center;
+        padding: 50px 20px; /* Padding around the header */
+        position: relative; /* For positioning child elements */
+        overflow: hidden; /* Hide overflow for decorative elements */
+    }
+
+
+
